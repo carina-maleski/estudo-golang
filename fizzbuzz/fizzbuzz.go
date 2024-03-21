@@ -9,14 +9,16 @@ func main() {
 
 	for i := 1; i <= int(input); i++ {
 		
-		if i % 15 == 0 {
+		switch {
+		case i%15 == 0:
 			fmt.Println("FizzBuzz")
-		} else if i % 3 == 0 { 
+		case i%3 == 0:
 			fmt.Println("Fizz")
-		} else if  i % 5 == 0 {
+		case i%5 == 0:
 			fmt.Println("Buzz")
-		} else { 
+		default:
 			fmt.Println(i)
 		}
+
 	}
 }
